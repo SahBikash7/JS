@@ -26,8 +26,25 @@ const person = {
   },
 };
 // console.log(person.fullName());
-console.log(person.isEligibleToVote());
+// console.log(person.isEligibleToVote());
 
 // Also the function inside the object is called method..
 // we can also access the key's value as:
-console.log(person["firstName"]);
+// console.log(person["firstName"]);
+
+// CRUD(Create,Read,Update,Delete)
+
+// To Update the object:
+person.firstName = "Ram";
+
+// To Add in the object:
+person.dob = "3rd Sep";
+person.language = "Nepali";
+
+console.log(person);
+// Delete The Property:
+delete person.language;
+
+console.log(person);
+
+// Why even the upper console.log prints object without language although i deleted it after using console.log
